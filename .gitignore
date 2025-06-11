@@ -198,3 +198,32 @@ artifacts/*
 # MLflow model files
 mlruns/0/models/*/artifacts/data/model/variables/variables.data-00000-of-00001
 mlruns/0/models/*/artifacts/data/model/variables/variables.data-00000-of-00001.lockmlruns/
+
+# MLflow
+mlruns/
+mlruns/**/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual Environment
+venv/
+env/
+.env/
+
+# IDE
+.idea/
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# DVC
+.dvc/
