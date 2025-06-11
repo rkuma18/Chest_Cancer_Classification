@@ -11,3 +11,19 @@
 7. Update the pipeline
 8. Update the main.py
 9 .Update the dvc.yaml
+
+
+
+import dagshub
+dagshub.init(repo_owner='rkuma18', repo_name='Chest_Cancer_Classification', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
+
+
+
+export MLFLOW_TRACKING_USERNAME=rkuma18
+export MLFLOW_TRACKING_PASSWORD=f83980e8f1c2a11703578b88e07f97aa18e532f3
+export MLFLOW_TRACKING_URI=https://dagshub.com/rkuma18/Chest_Cancer_Classification.mlflow/
