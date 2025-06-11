@@ -194,3 +194,7 @@ cython_debug/
 .cursorindexingignore
 
 artifacts/*
+
+# MLflow model files
+mlruns/0/models/*/artifacts/data/model/variables/variables.data-00000-of-00001
+mlruns/0/models/*/artifacts/data/model/variables/variables.data-00000-of-00001.lock
